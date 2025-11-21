@@ -79,7 +79,8 @@ const HeroSection = () => {
                 variants={textAnimation}
                 className="block text-white/60 text-2xl md:text-4xl"
               >
-I build web that builds brands.              </motion.span>
+                Building clean, efficient web apps.
+              </motion.span>
             </motion.h1>
           </div>
 
@@ -87,7 +88,7 @@ I build web that builds brands.              </motion.span>
             variants={itemAnimation}
             className="text-base sm:text-md text-muted-foreground leading-relaxed max-w-2xl mx-auto"
           >
-           Full-stack builder creating digital experiences that respect humans and scale with clarity. Accessibility is my north star.
+            Full-stack developer focused on Java and React. Building practical web and machine-learning projects with maintainable, production-ready code.
           </motion.p>
 
           <motion.div
@@ -106,8 +107,6 @@ I build web that builds brands.              </motion.span>
             </Link>
           </motion.div>
 
-     
-
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -117,6 +116,7 @@ I build web that builds brands.              </motion.span>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl" />
           </motion.div>
         </motion.div>
+
         <SkillsShowcase />
       </div>
     </section>

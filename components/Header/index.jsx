@@ -68,17 +68,17 @@ const Logo = ({ isMobile = false }) => (
                     className={`${isMobile ? 'w-10 h-10' : 'w-12 h-12 sm:w-14 sm:h-14'} rounded-full`}
                 />
             </motion.div>
-            <motion.span
-                className={`text-gray-300 font-semibold ${isMobile ? 'hidden' : 'text-base sm:text-lg'}`}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.2 }}
-            >
-                <span className="hidden sm:inline">{config.developer.name} | Devxora</span>
-                {/* <span className="sm:hidden">{config.developer.name}</span> */}
-            </motion.span>
-        </Link>
-    </motion.div>
+<motion.span
+    className={`text-gray-300 font-semibold ${isMobile ? 'hidden' : 'text-base sm:text-lg'}`}
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ delay: 0.2 }}
+>
+    <span className="hidden sm:inline">{config.developer.name} | Developer</span>
+</motion.span>
+</Link>
+</motion.div>
+
 );
 
 const Navigation = ({ isMobile = false, onLinkClick }) => (
@@ -110,14 +110,21 @@ const ContactButton = ({ isMobile = false, onLinkClick }) => (
         transition={{ delay: isMobile ? 0.5 : 0.4, duration: 0.5 }}
         onClick={onLinkClick}
     >
-        <Link href={"https://github.com/huzaifahmedz/Huzaif-Ahmed-portfolio-fourth"} target='_blank' className={isMobile ? 'w-full' : ''}>
-            <Button className={`${isMobile ? 'w-full' : ''} rounded-2xl font-semibold bg-white text-gray-900 hover:bg-gray-200 text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3`}>
-                <span className="hidden sm:inline">Repo Inside!</span>
-                <span className="sm:hidden">Template</span>
+        <Link 
+            href="/NaveenS-Resume.pdf" 
+            download 
+            className={isMobile ? 'w-full' : ''}
+        >
+            <Button 
+                className={`${isMobile ? 'w-full' : ''} rounded-2xl font-semibold bg-white text-gray-900 hover:bg-gray-200 text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3`}
+            >
+                <span className="hidden sm:inline">Download Resume</span>
+                <span className="sm:hidden">Resume</span>
             </Button>
         </Link>
     </motion.div>
 );
+
 
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

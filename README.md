@@ -1,55 +1,55 @@
-![Thumbnail ](images/Thumbnail.png)
+# 🚀 Naveen S — Developer Portfolio
 
-# Huzaif Ahmed - Portfolio Website
+A modern and responsive personal portfolio designed to showcase my **projects**, **skills**, and **experience**.  
+Built using **Next.js**, **Tailwind CSS**, and **Framer Motion**, this website delivers a clean UI, smooth animations, and a fast user experience.
 
-A modern and responsive portfolio website to showcase my projects, skills, and experiences. Built with Next.js and styled using Tailwind CSS, this portfolio provides a seamless user experience with smooth animations and an organized layout.
+---
 
-## Features
+## 🌟 Features
 
-- **Responsive Design**: Optimized for all devices, including mobile, tablet, and desktop.
-- **Dark Theme**: Provides a visually appealing dark theme.
-- **Smooth Animations**: Utilizes Framer Motion for animations.
+### ✔ Modern UI & Design
+- Sleek dark-themed interface  
+- Elegant animations powered by Framer Motion  
+- Minimal, professional, and developer-focused aesthetic  
 
-## Technologies Used
+### ✔ Fully Responsive
+- Works seamlessly on desktop, tablet, and mobile devices  
 
-- **Next.js**: React framework for building static and dynamic websites.
-- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
-- **Framer Motion**: Animation library for React to create smooth transitions and effects.
-- **GitHub API**: Fetches the latest GitHub projects dynamically.
+### ✔ Dynamic Project Showcase
+- Custom-designed project cards  
+- GitHub links + Live Demo links  
+- High-quality placeholder thumbnails  
 
-## Getting Started
+### ✔ Interactive Tech Stack
+- Animated skill grid  
+- Icons for each technology  
+- Smooth hover effects  
 
-### Prerequisites
+### ✔ Contact Section
+- Functional EmailJS integration  
+- Styled input fields  
+- Custom animated submit button  
 
-- [Node.js](https://nodejs.org/) (v14 or later)
-- [Git](https://git-scm.com/)
+---
 
-### Installation
+## 🛠 Tech Stack
 
-1. Clone the repository:
+### **Frontend**
+- Next.js 15  
+- React 18  
+- Tailwind CSS  
+- Framer Motion  
+- Radix UI  
+- React Icons  
+- Lucide Icons  
 
-   ```bash
-   git clone https://github.com/huzaifahmedz/portfolio-website.git
-   ```
+### **Tools & Utilities**
+- SWR  
+- EmailJS  
+- Next Themes  
+- ESLint  
+- PostCSS  
+- Node.js  
 
-2. Navigate into the project directory:
+---
 
-   ```bash
-   cd portfolio-website
-   ```
-
-3. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-4. Start the development server:
-
-   ```bash
-   npm run dev
-   ```
-
-
-
-![Demo](images/Screenshot_1.png)

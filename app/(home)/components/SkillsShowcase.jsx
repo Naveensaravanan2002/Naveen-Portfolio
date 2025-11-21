@@ -3,23 +3,22 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { HiCode } from 'react-icons/hi';
-import { FaReact, FaNodeJs, FaGithub, FaAws } from 'react-icons/fa';
-import { SiExpress, SiMongodb, SiTailwindcss, SiFigma, SiGreensock, SiThreedotjs, SiJavascript, SiMaterialdesign } from 'react-icons/si';
-import { TbBrandFramerMotion } from 'react-icons/tb';
+import { FaHtml5, FaCss3Alt, FaReact, FaJava, FaPython, FaGit, FaGithub } from 'react-icons/fa';
+import { SiTailwindcss, SiPostgresql, SiStreamlit, SiVisualstudiocode, SiJavascript } from 'react-icons/si';
 
 const skills = [
-    { name: "AWS", icon: <FaAws className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-2 sm:col-span-1 md:col-span-2 row-span-1" },
-    { name: "React.js", icon: <FaReact className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
-    { name: "Express", icon: <SiExpress className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
-    { name: "MongoDB", icon: <SiMongodb className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-2 sm:col-span-1 sm:row-span-2 row-span-1" },
-    { name: "Node.js", icon: <FaNodeJs className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-2 sm:col-span-1 md:col-span-2 row-span-1" },
-    { name: "GitHub", icon: <FaGithub className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "HTML", icon: <FaHtml5 className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "CSS", icon: <FaCss3Alt className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "JavaScript", icon: <SiJavascript className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "React", icon: <FaReact className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
     { name: "Tailwind", icon: <SiTailwindcss className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
-    { name: "GSAP", icon: <SiGreensock className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
-    { name: "Framer Motion", icon: <TbBrandFramerMotion className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
-    { name: "Three.js", icon: <SiThreedotjs className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-2 sm:col-span-1 md:col-span-2 row-span-1" },
-    { name: "Figma", icon: <SiFigma className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
-    { name: "Material UI", icon: <SiMaterialdesign className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "Java", icon: <FaJava className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "Python", icon: <FaPython className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "SQL", icon: <SiPostgresql className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "Streamlit", icon: <SiStreamlit className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "Git", icon: <FaGit className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "GitHub", icon: <FaGithub className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "VS Code", icon: <SiVisualstudiocode className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
 ];
 
 const containerAnimation = {
@@ -73,7 +72,7 @@ const SkillsShowcase = () => {
                         gridAutoFlow: 'row dense'
                     }}
                 >
-                {skills.map((skill, index) => (
+                {skills.map((skill) => (
                     <motion.div
                         key={skill.name}
                         variants={itemAnimation}
@@ -101,18 +100,15 @@ const SkillsShowcase = () => {
                             "
                             style={{ height: '100%' }}
                         >
-                            {/* Shiny overlay effect */}
                             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
                                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent shiny-sweep" />
                             </div>
-                            
-                            {/* Glossy shine effect */}
+
                             <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300">
                                 <div className="absolute top-0 left-0 right-0 h-1/2 bg-gradient-to-b from-white/40 to-transparent rounded-t-2xl" />
                             </div>
                             
                             <div className="relative flex flex-col items-center gap-1.5 sm:gap-2 md:gap-3 lg:gap-4 w-full z-10">
-                                {/* Icon container */}
                                 <div className="relative">
                                     <div className="relative w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-md sm:rounded-lg md:rounded-xl bg-black border border-white/30 flex items-center justify-center shadow-lg transition-all duration-300 group-hover:border-white/60 group-hover:shadow-white/20 group-hover:shadow-[0_0_15px_rgba(255,255,255,0.15)]">
                                         <div className="text-white drop-shadow-lg transition-transform duration-300 group-hover:scale-110">
@@ -121,7 +117,6 @@ const SkillsShowcase = () => {
                                     </div>
                                 </div>
                                 
-                                {/* Skill name */}
                                 <div className="flex flex-col items-center gap-0.5 sm:gap-1 w-full px-0.5 sm:px-1">
                                     <span className="text-[9px] sm:text-[10px] md:text-xs lg:text-sm font-bold text-white text-center tracking-tight transition-all duration-300 group-hover:text-white/90 break-words leading-tight">
                                         {skill.name}
@@ -139,4 +134,3 @@ const SkillsShowcase = () => {
 };
 
 export default SkillsShowcase;
-

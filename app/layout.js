@@ -15,13 +15,15 @@ const geistSans = localFont({
 });
 
 export const metadata = {
-  title: "Huzaif\'s Portfolio",
+  title: "Naveen\'s Portfolio",
   icons:{
 icon: "/logo.png"
   },
-  description: "Experienced fullstack developer specializing in modern web technologies. View my projects, skills, and experience.",
-  keywords: "fullstack developer,backend developer, frontend developer, web development, JavaScript,JS, C#, CSharp, React, Node.js, portfolio",
-  author: "Huzaif Ahmed",
+  description:
+    "Software Developer skilled in Java, React, and Web Development. Explore my projects, skills, and achievements.",
+  keywords:
+    "Naveen S, Java developer, Web developer, React developer, Python, SQL, Streamlit, portfolio",
+  author: "Naveen S",
   robots: "index, follow",
 };
 

@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import { itemAnimation } from './Animations';
 
 export const ProjectCard = ({ project, index }) => (
@@ -50,22 +50,52 @@ export const ProjectCard = ({ project, index }) => (
             </div>
 
             <div className="flex items-center gap-3 pt-4">
-                <Button
-                    size="sm"
-                    className="rounded-full h-8 px-4 text-xs"
-                    asChild
-                >
-                    <a
-                        href={project.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2"
+                {/* Live Demo button (shows only when demo link exists) */}
+                {project.demo ? (
+                    <Button
+                        size="sm"
+                        className="rounded-full h-8 px-4 text-xs"
+                        asChild
                     >
-                        Live Demo
-                        <FaExternalLinkAlt className="w-3 h-3" />
-                    </a>
-                </Button>
+                        <a
+                            href={project.demo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2"
+                        >
+                            Live Demo
+                            <FaExternalLinkAlt className="w-3 h-3" />
+                        </a>
+                    </Button>
+                ) : (
+                    <span className="inline-block rounded-full h-8 px-4 text-xs bg-zinc-800 text-zinc-400 flex items-center justify-center">
+                        No Demo
+                    </span>
+                )}
+
+                {/* GitHub / Source button (shows only when github link exists) */}
+                {project.github ? (
+                    <Button
+                        size="sm"
+                        className="rounded-full h-8 px-4 text-xs"
+                        asChild
+                    >
+                        <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2"
+                            aria-label={`${project.title} source on GitHub`}
+                        >
+                            <FaGithub className="w-3 h-3" />
+                            Source
+                        </a>
+                    </Button>
+                ) : null}
             </div>
         </div>
     </motion.div>
 );
+
+export default ProjectCard;
+4277
